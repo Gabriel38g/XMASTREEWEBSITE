@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+</head>
+<style>
+body {
+  background-image: url("/images/pine-branches.png");
+  background-color: #3DFF22;
+}
+.headerDiv {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  height: 75px;
+  width: 85%;
+  border: 2px outset green;
+  background-image: url("/images/pinefoliage.jpg");
+  /*text-align: center;*/
+}
+.menuDiv {
+  height: 50px;
+  width: 95%;
+  border: 5px outset green;
+  background-color: #53AA22;
+  text-align: center;
+}
+.leftDiv {
+  background-image: url("/images/treefarm.jpg");
+  width: 800px;
+  height: 600px;
+  background-size: cover;
+}
+
+#nav-wrapper {
+width:90%;
+margin:0 auto;
+padding:10px 0;
+background:#3DFF31;
+}
+
+ul#nav {
+font-family: Ubuntu Regular;
+font-size:24px;
+list-style:none;
+margin:0 auto;
+padding:0;
+width:100%;
+overflow: auto;
+}
+
+ul#nav li {
+display:inline;
+}
+
+ul#nav li a {
+text-decoration:none;
+display: block;
+margin-left: 2%;
+padding: 9px 3%; 
+background:#53AA22;
+color:#fff;
+float:left;
+text-align:center;
+border-top:1px solid #81cc44;
+border-right:2px solid #53AA22;
+border-bottom:1px solid #3dcc00;
+border-left:2px solid #53AA22;
+}
+
+ul#nav li a:hover {
+background:#33FF66;
+color:#000;
+border-top:1px solid #81ff44;
+border-right:2px solid #c59888;
+border-bottom:1px solid #c5ff88;
+border-left:2px solid #815444;
+}
+
+</style>
+<script type="text/javascript">
+function changeImage(){
+   document.getElementById("leftDiv").style.backgroundImage = "url('/images/whitepine.jpg')";
+   document.getElementById("leftDiv").innerHTML = "This is the White Pines we sell!";
+}
+function changeImageback(){
+   document.getElementById("leftDiv").style.backgroundImage = "url('/images/pinetrees.jpg')";
+   document.getElementById("leftDiv").innerHTML = "These are the Blue Spruce Trees";
+}
+</script>
+
+<body>
+<center>
+<div class="headerDiv">
+<h2> Welcome to David's Pine Tree Emporium! </h2>
+</div>
+<br>
+<div class="menuDiv">
+<ul id="nav">
+<li class=""><a href="">Home</a></li>
+<li class="" onclick="changeImage()"><a>White Pine</a></li>
+<li class="" onclick="changeImageback()"><a>Blue Spruce</a></li>
+<li class=""><a href="">FA-Q</a></li>
+<li class=""><a href="">Contact</a></li>
+</ul>
+</div>
+<div class="leftDiv" id="leftDiv">
+
+</div>
+
+</center>
+</body>
