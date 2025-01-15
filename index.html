@@ -85,6 +85,14 @@ function changeImageback(){
    document.getElementById("leftDiv").style.backgroundImage = "url(images/pinetrees.jpg)";
    document.getElementById("leftDiv").innerHTML = "These are the Blue Spruce Trees";
 }
+function faq(){
+   document.getElementById("leftDiv").style.backgroundImage = "url('/images/WSFAQ.jpg')";
+   document.getElementById("leftDiv").innerHTML = "FAQ!";
+}
+function contact(){
+   document.getElementById("leftDiv").style.backgroundImage = "url('/images/WSContactInfo.jpg')";
+   document.getElementById("leftDiv").innerHTML = "Contact";
+}
 </script>
 
 <body>
@@ -98,8 +106,8 @@ function changeImageback(){
 <li class=""><a href="">Home</a></li>
 <li class="" onclick="changeImage()"><a>White Pine</a></li>
 <li class="" onclick="changeImageback()"><a>Blue Spruce</a></li>
-<li class=""><a href="">FA-Q</a></li>
-<li class=""><a href="">Contact</a></li>
+<li class="" onclick="faq()"><a>FA-Q</a></li>
+<li class="" onclick="contact()"><a>Contact</a></li>
 </ul>
 </div>
 <div class="leftDiv" id="leftDiv">
